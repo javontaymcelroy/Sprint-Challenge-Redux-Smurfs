@@ -153,6 +153,11 @@ class App extends Component {
           </div>
         </div>
         <img
+          src='http://pngimg.com/uploads/smurf/smurf_PNG51.png'
+          alt='smurfs'
+          className='grumpy'
+        />
+        <img
           src='http://pngimg.com/uploads/smurf/smurf_PNG61.png'
           alt='smurfs'
           className='smurf-family'
