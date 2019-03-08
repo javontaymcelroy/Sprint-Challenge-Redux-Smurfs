@@ -2,4 +2,21 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background: rgb(41, 189, 241);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(41, 189, 241, 1) 45%,
+    rgba(41, 144, 241, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(41, 189, 241, 1) 45%,
+    rgba(41, 144, 241, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(41, 189, 241, 1) 45%,
+    rgba(41, 144, 241, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#29bdf1",endColorstr="#2990f1",GradientType=1);
 }
