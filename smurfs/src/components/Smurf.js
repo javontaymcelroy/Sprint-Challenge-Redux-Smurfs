@@ -7,7 +7,7 @@ function Smurf(props) {
       <p className='smurfname'>{props.name}</p>
       <div className='smurf-info'>
         <p className='smurf-text'>{props.age} years old</p>
-        <p className='smurf-text'>and</p>
+        <p className='smurf-text'>|</p>
         <p className='smurf-text'> {props.height} tall</p>
       </div>
       <button

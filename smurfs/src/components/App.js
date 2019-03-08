@@ -116,7 +116,7 @@ class App extends Component {
           />
           <div className='smurfs'>
             <img
-              src='http://pngimg.com/uploads/smurf/smurf_PNG48.png'
+              src='http://pngimg.com/uploads/smurf/smurf_PNG39.png'
               alt='papasmurf'
               className='papa'
             />
@@ -128,6 +128,9 @@ class App extends Component {
           </div>
         </div>
         <div className='smurf-container'>
+          <h1 className='smurf-title'>
+            Join the Smurf Gang on Their Next Adventure!
+          </h1>
           <div className='Smurfs-list'>
             {this.props.smurfs.length === 0 ? (
               <div>Add a Smurf!</div>
