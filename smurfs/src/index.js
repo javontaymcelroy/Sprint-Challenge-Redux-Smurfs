@@ -1,18 +1,21 @@
+// --------------------------- DEPENDANCIES -------------------------------------------//
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './components/App';
 import thunk from 'redux-thunk';
 import logger from 'redux-logger';
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
-import /* You need some sort of reducer */ './reducers';
+// --------------------------- COMPONENTS -------------------------------------------//
+import App from './components/App';
+// --------------------------- STYLES -------------------------------------------//
+import './index.css';
+// --------------------------- REDUCERS -------------------------------------------//
+import smurfReducer from './reducers/index';
 
-const store = createStore(
-  () => {}, // this is the most basic reducer. A function that returns and object. Replace it.
-  applyMiddleware(/* be sure to throw in the proper middlewares here*/)
-);
+// --------------------------- STORE -------------------------------------------//
+const store = createStore(smurfReducer, applyMiddleware(thunk, logger));
 
+// --------------------------- APP PROVIDER -------------------------------------------//
 ReactDOM.render(
   <Provider store={store}>
     <App />
