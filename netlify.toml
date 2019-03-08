@@ -1,0 +1,4 @@
+[build]
+base = "Sprint-Challenge-Redux-Smurfs/"
+publish = "Sprint-Challenge-Redux-Smurfs/build/"
+command = "yarn build"
