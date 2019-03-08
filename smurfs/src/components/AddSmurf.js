@@ -1,19 +1,32 @@
 import React from 'react';
+import './App.css';
 
 function AddSmurf(props) {
   return (
-    <div>
-      <label>
-        Name <input type='text' name='name' onChange={props.onChange} />
-      </label>
+    <div className='form'>
+      <input
+        type='text'
+        name='name'
+        onChange={props.onChange}
+        placeholder='name'
+      />
 
-      <label>
-        Age <input type='number' name='age' onChange={props.onChange} />
-      </label>
-      <label>
-        Height <input type='text' name='height' onChange={props.onChange} />
-      </label>
-      <button onClick={props.onClick}>Submit</button>
+      <input
+        type='number'
+        name='age'
+        onChange={props.onChange}
+        placeholder='age'
+      />
+      <input
+        type='text'
+        name='height'
+        onChange={props.onChange}
+        placeholder='height'
+      />
+
+      <button onClick={props.onClick} className='submit-btn'>
+        Submit
+      </button>
     </div>
   );
 }

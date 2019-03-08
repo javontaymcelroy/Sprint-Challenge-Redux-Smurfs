@@ -149,6 +149,22 @@ class App extends Component {
             )}
           </div>
         </div>
+        <img
+          src='http://pngimg.com/uploads/smurf/smurf_PNG61.png'
+          alt='smurfs'
+          className='smurf-family'
+        />
+        <img
+          src='http://pngimg.com/uploads/smurf/smurf_PNG55.png'
+          alt='flower-smurf'
+          className='flower-smurf'
+        />
+        <img
+          src='http://pngimg.com/uploads/smurf/smurf_PNG40.png'
+          alt='tipping-smurf'
+          className='tip-smurf'
+        />
+        <span className='background2' />
         <span className='background' />
       </div>
     );
