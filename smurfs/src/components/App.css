@@ -1,28 +1,87 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+  text-align: center;
+  width: 80%;
+}
+
+.smurfs-logo {
+  width: 400px;
+}
+
+.title {
   color: white;
+  font-family: 'Luckiest Guy', cursive;
+  letter-spacing: 5px;
+  font-size: 4rem;
 }
 
-.App-title {
-  font-size: 1.5em;
+.smurf-container {
+  margin-top: 1%;
+  background-color: white;
+  border-radius: 30px;
+  padding: 50px;
+  width: 80%;
+  height: auto;
 }
 
-.App-intro {
-  font-size: large;
+.smurfette {
+  width: 400px;
+  position: absolute;
+  left: 70%;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.smurfCard {
+  text-align: center;
+  width: 350px;
+  border-radius: 30px;
+  border: 3px dashed rgb(226, 245, 252);
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.smurfname {
+  font-size: 2rem;
+  margin: 0;
+  font-family: 'Luckiest Guy', cursive;
+  color: rgb(0, 140, 255);
+}
+
+.del-button {
+  background-color: red;
+  border: none;
+  width: 100px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  color: white;
+  margin: 0px 5px;
+  cursor: pointer;
+}
+
+.up-button {
+  background-color: rgb(0, 153, 255);
+  border: none;
+  width: 100px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  color: white;
+  margin: 0px 5px;
+  cursor: pointer;
+}
+
+.add-button {
+  background-color: rgb(55, 228, 127);
+  border: none;
+  width: 100px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  color: white;
+  margin: 20px 5px;
+  cursor: pointer;
 }
