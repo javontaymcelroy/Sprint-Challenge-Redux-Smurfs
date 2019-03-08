@@ -114,14 +114,20 @@ class App extends Component {
             alt='smurfs-logo'
             className='smurfs-logo'
           />
-          <h1 className='title'>JOIN THE SMURF VILLAGE!</h1>
+          <div className='smurfs'>
+            <img
+              src='http://pngimg.com/uploads/smurf/smurf_PNG48.png'
+              alt='papasmurf'
+              className='papa'
+            />
+            <img
+              src='http://pngimg.com/uploads/smurf/smurf_PNG53.png'
+              alt='smurfette'
+              className='smurfette'
+            />
+          </div>
         </div>
         <div className='smurf-container'>
-          <img
-            src='http://pngimg.com/uploads/smurf/smurf_PNG60.png'
-            alt='smurfette'
-            className='smurfette'
-          />
           <div className='Smurfs-list'>
             {this.props.smurfs.length === 0 ? (
               <div>Add a Smurf!</div>
@@ -143,6 +149,7 @@ class App extends Component {
             )}
           </div>
         </div>
+        <span className='background' />
       </div>
     );
   }
